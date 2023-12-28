@@ -72,23 +72,48 @@
 }
 
 /* Tailwind Styles */
+.nav {
+  @apply flex justify-between w-full mb-16 pt-5;
+}
+.desktopNavLinks {
+  @apply hidden sm:flex;
+}
+.desktopNavLink {
+  @apply flex gap-3 md:gap-5;
+}
+
+.mobileNavLinks {
+  @apply flex sm:hidden relative;
+}
+
+.mobileNavLink {
+  @apply flex;
+}
+
+.profile {
+  @apply rounded-full;
+}
 
 .app {
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
+.black_btn2 {
+  @apply mt-5 w-full rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+}
 .black_btn {
   @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
 }
-
 .outline_btn {
   @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
 }
-
+.coming_text {
+  @apply mt-[15rem] text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
+}
 .orange_gradient {
   @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
 }
@@ -102,7 +127,7 @@
 }
 
 .desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl text-center;
 }
 
 .search_input {
@@ -127,6 +152,10 @@
 }
 
 /* Form Component */
+.form{
+  @apply relative w-full flex-center
+}
+
 .form_textarea {
   @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
 }
@@ -137,7 +166,7 @@
 
 /* Nav Component */
 .logo_text {
-  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+  @apply ml-2 max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
 }
 
 .dropdown {
